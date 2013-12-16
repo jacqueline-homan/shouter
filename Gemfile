@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
@@ -7,7 +7,12 @@ gem 'rails', '3.2.14'
 
 gem 'sqlite3'
 
+gem 'strong_parameters', '0.2.0'
+gem 'monban', '0.0.6'
 
+group :development, :test do
+  gem 'pry'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
