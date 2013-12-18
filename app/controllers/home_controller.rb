@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   private
 
-  def check_logged_user
+  def check_logged_in_user
     if signed_in?
       redirect_to dashboard_path
     end
