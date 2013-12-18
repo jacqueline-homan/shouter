@@ -8,14 +8,18 @@
 </head>
 <body>
 
-  <% if signed_in? %>
-    <%= current_user.username %>
-    <%= link_to "Log out", session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Login", new_session_path %>
-    <%= link_to "Sign up", new_user_path %>
+  <div>
+    <% if signed_in? %>
+      <%= link_to current_user.username, dashboard_path %>
+      <%= link_to "Log out", session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Login", new_session_path %>
+      <%= link_to "Sign up", new_user_path %>
+    <% end %>
+  </div>
+  <% if alert %>
+    <p><i><font color= "red"><%= alert %></font></i></p>
   <% end %>
-
 <%= yield %>
 
 </body>

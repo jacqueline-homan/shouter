@@ -1,0 +1,11 @@
+<%= form_for @text_shout do |form| %> <%# we use the object '@shout' instead of the symbol ':shout' so that it won't post to the dashboard -%>
+  <%= form.text_field :body, placeholder: 'Shout content here' %>
+  <%= form.submit 'Shout!' %>
+<% end %>
+
+<%= form_for @photo_shout do |form| %>
+<%= form.file_field :image %>
+  <%= form.submit 'Shout!' %>
+<% end %>
+
+<%= render @shouts %>

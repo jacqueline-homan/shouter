@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem 'strong_parameters', '0.2.0'
 gem 'monban', '0.0.6'
+gem 'paperclip', '3.4.0'
 
 group :development, :test do
   gem 'pry'
