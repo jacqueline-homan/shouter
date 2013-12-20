@@ -15,4 +15,15 @@ class User < ActiveRecord::Base
   # What this means is that users have:
   # following_relationships
   # follower_id and followed_user_id
+  def following? user
+    followed_user_ids.include? user.id
+  end
+
+  def follow user
+    followed_users << user
+  end
+
+  def unfollow user
+    followed_users.delete(user)
+  end
 end

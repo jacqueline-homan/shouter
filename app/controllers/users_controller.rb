@@ -1,6 +1,10 @@
 class UsersController < ApplicationController
   respond_to :html
 
+  def index
+    @user = User.all 
+  end
+
   def new
     @user = User.new
   end
