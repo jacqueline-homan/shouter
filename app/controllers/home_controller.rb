@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   before_filter :check_logged_in_user
   def show
+  	@dashboard = Dashboard.new
   end
 
   private
