@@ -1,12 +1,12 @@
 class FollowingRelationshipsController < ApplicationController
   def create
   	current_user.follow user
-  	redirect_to user
+  	redirect_to user, notice: "Following user"
   end
 
   def destroy
   	current_user.unfollow user
-  	redirect_to user
+  	redirect_to user, notice: "No longer following user"
   end
 
   # Demonstration of memoization and 
