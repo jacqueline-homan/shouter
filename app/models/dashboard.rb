@@ -1,4 +1,4 @@
-class Dashboad
+class Dashboard
   def initialize user
   	@user = user
   end
@@ -11,8 +11,8 @@ class Dashboad
   	PhotoShout.new
   end
 
-  def shouts
-  	@user.shouts
+  def timeline
+    Timeline.new(@user)    
   end
 
 end
