@@ -2,7 +2,7 @@
 # in the scope of a class
 module Concerns
   module Following
-  	extend ActiveSupport::Concerns
+  	extend ActiveSupport::Concern
   	  included do
   	  	has_many :followed_user_relationships, 
           foreign_key: :follower_id, 
@@ -27,6 +27,5 @@ module Concerns
       def unfollow user
         followed_users.delete(user)
       end
-    
   end
 end
