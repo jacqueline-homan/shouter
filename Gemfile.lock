@@ -40,6 +40,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    emoji (0.1.1)
     erubis (2.7.0)
     execjs (2.0.2)
     hike (1.2.3)
@@ -128,6 +129,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  emoji
   jquery-rails
   monban (= 0.0.6)
   paperclip (= 3.4.0)
