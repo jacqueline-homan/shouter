@@ -5,9 +5,9 @@ class Search
   	@term = options.fetch(:term, "")
   end
 
-  def shouts
-    
+  def shouts    
     Shout.text_shouts.where(content_id: text_shouts)
+    
   end
 
   private
