@@ -5,7 +5,7 @@ class ShoutsController < ApplicationController
     end
     @shouts = @search.results
   end
-end
+
 
   def show
   	#binding.pry
