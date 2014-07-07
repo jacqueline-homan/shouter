@@ -20,7 +20,7 @@ class FollowingRelationshipsController < ApplicationController
   private
   def user
   	# We could simply write this:
-  	#User.fin(params[:user_id]), but
+  	#User.find(params[:user_id]), but
   	# that would mean that the def blocks above
   	# would be calling and looking up the
   	# record twice. To avoid this query cache
